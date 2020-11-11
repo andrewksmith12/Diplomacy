@@ -13,4 +13,5 @@ class Army:
     def action_move(self, destination):
         self.destination = destination
 
-
+    def support(self, supporting):
+        self.supporting = supporting
