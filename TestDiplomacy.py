@@ -14,7 +14,6 @@
 
 from io import StringIO
 from unittest import main, TestCase
-from army import Army
 from Diplomacy import diplomacy_read, diplomacy_eval, diplomacy_print, diplomacy_solve, diplomacy_create_army
 
 # -----------

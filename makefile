@@ -56,8 +56,16 @@ Diplomacy.log:
 	git log > Diplomacy.log
 
 RunDiplomacy.tmp: RunDiplomacy.in RunDiplomacy.out RunDiplomacy.py
-	$(PYTHON) RunDiplomacy.py < RunDiplomacy.in > RunDiplomacy.tmp
-	diff --strip-trailing-cr RunDiplomacy.tmp RunDiplomacy.out
+	$(PYTHON) RunDiplomacy.py < RunDiplomacy1.in > RunDiplomacy1.tmp
+	$(PYTHON) RunDiplomacy.py < RunDiplomacy2.in > RunDiplomacy2.tmp
+	$(PYTHON) RunDiplomacy.py < RunDiplomacy3.in > RunDiplomacy3.tmp
+	$(PYTHON) RunDiplomacy.py < RunDiplomacy4.in > RunDiplomacy4.tmp
+	$(PYTHON) RunDiplomacy.py < RunDiplomacy5.in > RunDiplomacy5.tmp
+	diff --strip-trailing-cr RunDiplomacy1.tmp RunDiplomacy1.out
+	diff --strip-trailing-cr RunDiplomacy2.tmp RunDiplomacy2.out
+	diff --strip-trailing-cr RunDiplomacy3.tmp RunDiplomacy3.out
+	diff --strip-trailing-cr RunDiplomacy4.tmp RunDiplomacy4.out
+	diff --strip-trailing-cr RunDiplomacy5.tmp RunDiplomacy5.out
 
 TestDiplomacy.tmp: TestDiplomacy.py
 	$(COVERAGE) run    --branch TestDiplomacy.py >  TestDiplomacy.tmp 2>&1
@@ -86,6 +94,7 @@ check:
 clean:
 	rm -f  .coverage
 	rm -f  *.pyc
+	rm -f  *.tmp
 	rm -f  RunDiplomacy.tmp
 	rm -f  TestDiplomacy.tmp
 	rm -rf __pycache__

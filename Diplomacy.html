@@ -12,13 +12,56 @@
     <p></p>
 <p>
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="Diplomacy.html#Army">Army</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Army">class <strong>Army</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Army">Army</a>(name,&nbsp;location,&nbsp;action)<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Army-__init__"><strong>__init__</strong></a>(self, name, location, action)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="Army-__lt__"><strong>__lt__</strong></a>(self, other)</dt><dd><tt>Return&nbsp;self&lt;value.</tt></dd></dl>
+
+<dl><dt><a name="Army-action_move"><strong>action_move</strong></a>(self, destination)</dt></dl>
+
+<dl><dt><a name="Army-support"><strong>support</strong></a>(self, supporting)</dt></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
 <tr bgcolor="#eeaa77">
 <td colspan=3 valign=bottom>&nbsp;<br>
 <font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
     
 <tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
 <td width="100%"><dl><dt><a name="-add_one_to_support"><strong>add_one_to_support</strong></a>(army_name)</dt><dd><tt>add&nbsp;one&nbsp;support&nbsp;to&nbsp;specified&nbsp;army&nbsp;name</tt></dd></dl>
- <dl><dt><a name="-diplomacy_create_army"><strong>diplomacy_create_army</strong></a>(name, location, action, location_or_supporting_army)</dt><dd><tt>Take&nbsp;in&nbsp;variables&nbsp;from&nbsp;solve,&nbsp;create&nbsp;an&nbsp;army&nbsp;object&nbsp;to&nbsp;represent&nbsp;the&nbsp;army&nbsp;and&nbsp;it's&nbsp;actions.&nbsp;Append&nbsp;this&nbsp;variable&nbsp;to&nbsp;a&nbsp;list&nbsp;of&nbsp;armies.</tt></dd></dl>
+ <dl><dt><a name="-diplomacy_create_army"><strong>diplomacy_create_army</strong></a>(name, location, action, location_or_supporting_army)</dt><dd><tt>Take&nbsp;in&nbsp;variables&nbsp;from&nbsp;solve,&nbsp;create&nbsp;an&nbsp;army&nbsp;<a href="builtins.html#object">object</a>&nbsp;to&nbsp;represent&nbsp;the&nbsp;army&nbsp;and&nbsp;it's&nbsp;actions.&nbsp;Append&nbsp;this&nbsp;variable&nbsp;to&nbsp;a&nbsp;list&nbsp;of&nbsp;armies.</tt></dd></dl>
  <dl><dt><a name="-diplomacy_eval"><strong>diplomacy_eval</strong></a>(armies_list)</dt><dd><tt>Determine&nbsp;if&nbsp;armies&nbsp;are&nbsp;supporting&nbsp;being&nbsp;attacked&nbsp;and/or&nbsp;supporting&nbsp;eachother.&nbsp;If&nbsp;armies&nbsp;is&nbsp;being&nbsp;attacked&nbsp;and&nbsp;supporting,&nbsp;remove&nbsp;the&nbsp;support.&nbsp;Then,&nbsp;cycle&nbsp;through&nbsp;all&nbsp;the&nbsp;battles&nbsp;and&nbsp;determine&nbsp;the&nbsp;winners.&nbsp;Update&nbsp;their&nbsp;properties&nbsp;accordingly.</tt></dd></dl>
  <dl><dt><a name="-diplomacy_print"><strong>diplomacy_print</strong></a>(w, army_name, location_or_dead)</dt><dd><tt>Format&nbsp;and&nbsp;write&nbsp;the&nbsp;output&nbsp;to&nbsp;w.</tt></dd></dl>
  <dl><dt><a name="-diplomacy_read"><strong>diplomacy_read</strong></a>(s)</dt><dd><tt>Split&nbsp;the&nbsp;army&nbsp;line&nbsp;into&nbsp;variables,&nbsp;pass&nbsp;these&nbsp;variables&nbsp;back&nbsp;to&nbsp;solve.</tt></dd></dl>
