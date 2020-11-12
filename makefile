@@ -9,10 +9,18 @@ FILES :=                              \
     RunDiplomacy.py                     \
     TestDiplomacy.out                   \
     TestDiplomacy.py					  \
-	#cs330e-diplomacy-tests/andrewksmith12-RunDiplomacy.in   \ # TODO: add these back when tests are public
-	#cs330e-diplomacy-tests/andrewksmith12-RunDiplomacy.out  \
-    #cs330e-diplomacy-tests/andrewksmith12-TestDiplomacy.out \
-    #cs330e-diplomacy-tests/andrewksmith12-TestDiplomacy.py  \
+	# cs330e-diplomacy-tests/andrewksmith12-RunDiplomacy1.in   \ # TODO: add these back when tests are public
+	# cs330e-diplomacy-tests/andrewksmith12-RunDiplomacy1.out  \
+	# cs330e-diplomacy-tests/andrewksmith12-RunDiplomacy2.in   \ 
+	# cs330e-diplomacy-tests/andrewksmith12-RunDiplomacy2.out  \
+	# cs330e-diplomacy-tests/andrewksmith12-RunDiplomacy3.in   \ 
+	# cs330e-diplomacy-tests/andrewksmith12-RunDiplomacy3.out  \
+	# cs330e-diplomacy-tests/andrewksmith12-RunDiplomacy4.in   \ 
+	# cs330e-diplomacy-tests/andrewksmith12-RunDiplomacy4.out  \
+	# cs330e-diplomacy-tests/andrewksmith12-RunDiplomacy5.in   \ 
+	# cs330e-diplomacy-tests/andrewksmith12-RunDiplomacy5.out  \
+    # cs330e-diplomacy-tests/andrewksmith12-TestDiplomacy.out \
+    # cs330e-diplomacy-tests/andrewksmith12-TestDiplomacy.py  \
 
 ifeq ($(shell uname), Darwin)          # Apple
     PYTHON   := python3
