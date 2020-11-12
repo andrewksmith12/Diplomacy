@@ -9,7 +9,7 @@ FILES :=                              \
     RunDiplomacy.py                     \
     TestDiplomacy.out                   \
     TestDiplomacy.py					  \
-	#cs330e-diplomacy-tests/andrewksmith12-RunDiplomacy.in   \
+	#cs330e-diplomacy-tests/andrewksmith12-RunDiplomacy.in   \ # TODO: add these back when tests are public
 	#cs330e-diplomacy-tests/andrewksmith12-RunDiplomacy.out  \
     #cs330e-diplomacy-tests/andrewksmith12-TestDiplomacy.out \
     #cs330e-diplomacy-tests/andrewksmith12-TestDiplomacy.py  \

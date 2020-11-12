@@ -33,8 +33,6 @@ def diplomacy_create_army(name, location, action, location_or_supporting_army):
         add_one_to_support(supporting_army_name)
     return army
 
-
-
 def diplomacy_eval(armies_list):
     battles_list = []
     # Determine if armies are supporting being attacked and/or supporting eachother. If armies is being attacked and supporting, remove the support. 
@@ -49,10 +47,7 @@ def diplomacy_eval(armies_list):
     # Cycle through the battles
     for armies in battles_list:
         # compare total num of armies for that location
-        #print("Battle Initated: ")
-        #print("Support: "+str(armies[0].name)+": "+str(support[armies[0].name]))
-        #print("Support: "+str(armies[1].name)+": "+str(support[armies[1].name]))
-
+        #print("Battle Initated: \nSupport: "+str(armies[0].name)+": "+str(support[armies[0].name])+"Support: "+str(armies[1].name)+": "+str(support[armies[1].name]))
         if support[armies[0].name] == support[armies[1].name]:
             armies[0].location = "[dead]"
             armies[1].location = "[dead]"

@@ -1,3 +1,9 @@
+commit 5d643340a50bd7e0342dae8556d1b653dd38d6f0
+Author: andrewksmith12 <43506065+andrewksmith12@users.noreply.github.com>
+Date:   Thu Nov 12 13:25:59 2020 -0600
+
+    Add function for creating battle list, fighting battles, producing output.
+
 commit 5543e0e434c5487f805170d8b8299bffaf3948b1
 Merge: 49ce538 4341eb1
 Author: Caleb W Campbell <c.campbell@utexas.edu>
