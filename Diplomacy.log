@@ -1,0 +1,57 @@
+commit 5543e0e434c5487f805170d8b8299bffaf3948b1
+Merge: 49ce538 4341eb1
+Author: Caleb W Campbell <c.campbell@utexas.edu>
+Date:   Thu Nov 12 17:36:50 2020 +0000
+
+    Merge branch 'caleb' into 'master'
+    
+    add accaptance tests
+    
+    See merge request andrewksmith12/diplomacy!2
+
+commit 4341eb1515e36cac955afd7510d00779aabf0663
+Author: caleb Campbell <c.campbell@utexas.edu>
+Date:   Thu Nov 12 11:36:20 2020 -0600
+
+    add accaptance tests
+
+commit 49ce538fed0f8bac1a888370d9893fec96a45682
+Author: andrewksmith12 <43506065+andrewksmith12@users.noreply.github.com>
+Date:   Tue Nov 10 23:01:45 2020 -0600
+
+    Working on the project, peer programming
+
+commit 07524c2d44cea0385b345881dc83232ce593fbcf
+Merge: 3d07732 94bdb7f
+Author: Caleb W Campbell <c.campbell@utexas.edu>
+Date:   Wed Nov 11 04:17:19 2020 +0000
+
+    Merge branch 'dev' into 'master'
+    
+    implemented object creation, working on battle sequence.
+    
+    See merge request andrewksmith12/diplomacy!1
+
+commit 94bdb7f69601b11aab081b6502002e3cf283773b
+Author: andrewksmith12 <43506065+andrewksmith12@users.noreply.github.com>
+Date:   Tue Nov 10 22:12:55 2020 -0600
+
+    implemented object creation, working on battle sequence.
+
+commit 3d07732e878a88a729937724e2679b8c73812493
+Author: andrewksmith12 <43506065+andrewksmith12@users.noreply.github.com>
+Date:   Tue Nov 10 20:00:02 2020 -0600
+
+    forgot to save...
+
+commit 388b1647396bb1e4a401fe79f9f4749d6bbcb84a
+Author: andrewksmith12 <43506065+andrewksmith12@users.noreply.github.com>
+Date:   Tue Nov 10 19:58:29 2020 -0600
+
+    Setup file, copy structure from Collatz, add canidate army config
+
+commit 3f055031b247706765f8510843cec32bc55014cd
+Author: Andrew Smith <andrew@andrewksmith.net>
+Date:   Thu Nov 5 15:40:27 2020 +0000
+
+    Initial commit

@@ -5,13 +5,12 @@ class Army:
         self.location = location
         self.destination = ""
         self.supporting = ""
-        self.state = 1
-
-    def update_result(self, state):
-        self.state = state
 
     def action_move(self, destination):
         self.destination = destination
 
     def support(self, supporting):
         self.supporting = supporting
+
+    def __lt__(self, other):
+        return self.name < other.name #PRAGMA: no cover
