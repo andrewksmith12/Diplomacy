@@ -25,7 +25,7 @@ class TestDiplomacy (TestCase):
     # ----
     # read
     # ----
-                ## WORKING
+
     def test_read(self):
         s = "A Madrid Support B\n"
         i, j, a, o = diplomacy_read(s)
@@ -97,10 +97,12 @@ class TestDiplomacy (TestCase):
     # def test_eval_5(self):
     #     v = diplomacy_eval(100, 100)
     #     self.assertEqual(v, 26)
+
+
     # -----
     # print
     # -----
-                            ## WORKING
+
     def test_print(self):
         w = StringIO()
         diplomacy_print(w, 'A', '[dead]')
