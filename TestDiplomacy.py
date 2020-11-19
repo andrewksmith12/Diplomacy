@@ -14,7 +14,7 @@
 
 from io import StringIO
 from unittest import main, TestCase
-from Diplomacy import diplomacy_read, diplomacy_eval, diplomacy_print, diplomacy_solve, diplomacy_create_army
+from Diplomacy import diplomacy_read, diplomacy_eval, diplomacy_print, diplomacy_solve, diplomacy_create_army, reset_support
 
 # -----------
 # TestDiplomacy
@@ -74,30 +74,39 @@ class TestDiplomacy (TestCase):
         self.assertEqual(a.location, "Paris")
         self.assertEqual(a.action, "Hold")
 
+
     # ----
     # eval
     # ----
+                            ##WORKING ON THIS
+    def test_eval_1(self):
+        army_list = []
+        reset_support()
+        army_list.append(diplomacy_create_army("A", "London", "Support", "B"))
+        army_list.append(diplomacy_create_army("B", "Paris", "Hold", ""))
+        army_list = diplomacy_eval(army_list)
+        self.assertEqual(army_list[0].location, "London")
+        self.assertEqual(army_list[1].location, "Paris")
 
-    # def test_eval_1(self):
-    #     v = diplomacy_eval(1, 1)
-    #     self.assertEqual(v, 1)
+    def test_eval_2(self):
+        army_list = []
+        reset_support()
+        army_list.append(diplomacy_create_army("A", "Madrid", "Hold", ""))
+        army_list.append(diplomacy_create_army("B", "Barcelona", "Move", "Madrid"))
+        army_list = diplomacy_eval(army_list)
+        self.assertEqual(army_list[0].location, "[dead]")
+        self.assertEqual(army_list[1].location, "[dead]")
 
-    # def test_eval_2(self):
-    #     v = diplomacy_eval(100, 200)
-    #     self.assertEqual(v, 125)
-
-    # def test_eval_3(self):
-    #     v = diplomacy_eval(201, 210)
-    #     self.assertEqual(v, 89)
-
-    # def test_eval_4(self):
-    #     v = diplomacy_eval(900, 1000)
-    #     self.assertEqual(v, 174)
-
-    # def test_eval_5(self):
-    #     v = diplomacy_eval(100, 100)
-    #     self.assertEqual(v, 26)
-
+    def test_eval_3(self):
+        army_list = []
+        reset_support()
+        army_list.append(diplomacy_create_army("A", "Madrid", "Hold", ""))
+        army_list.append(diplomacy_create_army("B", "Barcelona", "Move", "Madrid"))
+        army_list.append(diplomacy_create_army("C", "Paris", "Support", "A"))
+        army_list = diplomacy_eval(army_list)
+        self.assertEqual(army_list[0].location, "Madrid")
+        self.assertEqual(army_list[1].location, "[dead]")
+        self.assertEqual(army_list[2].location, "Paris")
 
     # -----
     # print

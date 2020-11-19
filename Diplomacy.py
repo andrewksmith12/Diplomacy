@@ -87,7 +87,7 @@ def diplomacy_print(w, army_name, location_or_dead):
 def diplomacy_solve(r, w):
     """Process Input, create armies, solve for armies actions. Call functions to solve the diplomacy problem."""
     armies_list = []
-    support.clear()
+    reset_support()
     for s in r:
         if not s.strip():  # Skips blank lines
             continue
@@ -96,3 +96,6 @@ def diplomacy_solve(r, w):
     armies_list = diplomacy_eval(armies_list)
     for army in armies_list:
         diplomacy_print(w, army.name, army.location)
+
+def reset_support():
+    support.clear()

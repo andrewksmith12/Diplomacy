@@ -1,3 +1,21 @@
+commit 722442df4c6273879f847df57662c70dcc1684b5
+Author: andrewksmith12 <43506065+andrewksmith12@users.noreply.github.com>
+Date:   Wed Nov 18 19:11:23 2020 -0600
+
+    Hihi
+
+commit 7756b6a6fcd8694381752cec1ac13edced3cebd3
+Author: Andrew Smith <andrew@andrewksmith.net>
+Date:   Thu Nov 12 20:18:54 2020 +0000
+
+    Add .gitlab-ci.yml
+
+commit ac6795f0f860893135743a718d4b8818aa53e931
+Author: andrewksmith12 <43506065+andrewksmith12@users.noreply.github.com>
+Date:   Thu Nov 12 14:13:32 2020 -0600
+
+    Add Acceptance Tests, modify makefile to accept those changes.
+
 commit ddfd06e47e279077619f8d62fd14bb716ea04121
 Author: andrewksmith12 <43506065+andrewksmith12@users.noreply.github.com>
 Date:   Thu Nov 12 14:03:03 2020 -0600
